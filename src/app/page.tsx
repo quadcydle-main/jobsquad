@@ -22,7 +22,7 @@ export default function Home() {
         title=" Automate your job application process"
         
       >
-        <div className="pt-2">
+        <div className="pt-2 text-black">
           Focus on what matters most – your skills and experience. Let Job Squad handle
           the repetitive task of filling out application forms, so you can concentrate on
           advancing your career.
@@ -47,7 +47,7 @@ export default function Home() {
       
 
 
-      <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
+      <SectionTitle title="Frequently Asked Questions">
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.
       </SectionTitle>

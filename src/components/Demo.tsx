@@ -28,15 +28,15 @@ export const Demo = () => {
           icon={<FaCircle />} // Remove icon if not needed
         >
           <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-1/2 md:mr-4 mb-4 md:mb-0" style={{ alignSelf: "flex-start" }}>
+            <div className="w-full md:w-1/2 md:mr-4 mb-4 mr-10 md:mb-0" style={{ alignSelf: "flex-start" }}>
               <h2 className="font-semibold capitalize">Add extension to chrome</h2>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 1. Open the JOBSquad Extension page.
               </p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 2. Click on Add to Chrome
               </p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 3. A pop-up will appear. Click on Add extension
               </p>
             </div>
@@ -66,12 +66,12 @@ export const Demo = () => {
           icon={<FaCircle />} // Remove icon if not needed
         >
           <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-1/2 md:mr-4 mb-4 md:mb-0" style={{ alignSelf: "flex-start" }}>
+            <div className="w-full md:w-1/2 md:mr-4 mb-4 mr-10 md:mb-0" style={{ alignSelf: "flex-start" }}>
               <h2 className="font-semibold capitalize">Pin the extension</h2>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 1. On the top right corner of the browser click on extensions.
               </p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 2. Pin JOBSquad extension to the top by clicking on pin.
               </p>
             </div>
@@ -101,18 +101,18 @@ export const Demo = () => {
           icon={<FaCircle />} // Remove icon if not needed
         >
           <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-1/2 md:mr-4 mb-4 md:mb-0" style={{ alignSelf: "flex-start" }}>
+            <div className="w-full md:w-1/2 md:mr-4 mb-4 mr-10 md:mb-0" style={{ alignSelf: "flex-start" }}>
               <h2 className="font-semibold capitalize">Sign in with LinkedIn</h2>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 1. On the top right corner of the browser click on extensions.
               </p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 2. Click on the Job Squad Extension
               </p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 3. Click on Open Dashboard.
               </p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 4. Click on Login with LinkedIn.
               </p>
             </div>
@@ -142,15 +142,15 @@ export const Demo = () => {
           icon={<FaCircle />} // Remove icon if not needed
         >
           <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-1/2 md:mr-4 mb-4 md:mb-0" style={{ alignSelf: "flex-start" }}>
+            <div className="w-full md:w-1/2 md:mr-4 mb-4 mr-10 md:mb-0" style={{ alignSelf: "flex-start" }}>
               <h2 className="font-semibold capitalize">Create your Application</h2>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 1. Start your Job Application Process by clicking on CREATE APPLICATION on the menu on the left.
               </p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 2. Fill the Job Application form, Upload your resume, and click on Submit button on the bottom.
               </p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 3. Click on Close button.
               </p>
             </div>
@@ -180,15 +180,15 @@ export const Demo = () => {
           icon={<FaCircle />} // Remove icon if not needed
         >
           <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-1/2 md:mr-4 mb-4 md:mb-0" style={{ alignSelf: "flex-start" }}>
+            <div className="w-full md:w-1/2 md:mr-4 mb-4 mr-10 md:mb-0" style={{ alignSelf: "flex-start" }}>
               <h2 className="font-semibold capitalize">Start Applying</h2>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 1. On the Start Applying page click on SELECT button under your card to select it.
               </p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 2. Click Close to close the pop up after your card is selected.
               </p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 ">
                 3. Start Applying by clicking on START APPLYING WITH APPLICATION ID,
               </p>
             </div>
