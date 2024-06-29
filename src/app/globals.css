@@ -11,3 +11,12 @@
   }
 }
 
+/* Tailwind CSS Styles for Vertical Timeline Component */
+
+.vertical-timeline-element--work .vertical-timeline-element-content-arrow {
+  @apply rounded-r-md border-pink-600; /* Adjust 'rounded-r-md' to your desired border radius */
+}
+
+.vertical-timeline-element--education .vertical-timeline-element-content-arrow {
+  @apply rounded-r-md border-blue-600; /* Adjust 'rounded-r-md' to your desired border radius */
+}
