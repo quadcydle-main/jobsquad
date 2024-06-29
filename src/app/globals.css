@@ -5,18 +5,103 @@
 
 
 @layer base {
+
   html,
   body {
-    @apply dark:bg-trueGray-900;
+    @apply bg-[url('/bg.png')] bg-cover bg-no-repeat bg-center text-black;
+    /* Replace '../path/to/your/image.jpg' with your actual image path */
   }
 }
 
 /* Tailwind CSS Styles for Vertical Timeline Component */
 
 .vertical-timeline-element--work .vertical-timeline-element-content-arrow {
-  @apply rounded-r-md border-pink-600; /* Adjust 'rounded-r-md' to your desired border radius */
+  @apply rounded-r-md border-pink-600;
+  /* Adjust 'rounded-r-md' to your desired border radius */
 }
 
 .vertical-timeline-element--education .vertical-timeline-element-content-arrow {
-  @apply rounded-r-md border-blue-600; /* Adjust 'rounded-r-md' to your desired border radius */
+  @apply rounded-r-md border-blue-600;
+  /* Adjust 'rounded-r-md' to your desired border radius */
+}
+
+.vertical-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  max-height: 79%;
+  width: 2px;
+  /* Adjust the width of the timeline */
+  /* border-left: 4px dotted rgb(57, 117, 234); Change to dotted line */
+  border-color: #3975EA;
+  /* background: var(--line-color); */
+  margin-top: 20px;
+
+}
+
+.vertical-timeline.vertical-timeline--one-column-right::before {
+  right: 18px;
+  left: unset;
+}
+
+.vertical-timeline-element-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+  box-shadow: 0 0 0 1px #ff0000, inset 0 1px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05)
+}
+
+.vertical-timeline-element-icon.is-hidden {
+  /* visibility: hidden; */
+  border-radius: 50%;
+  /* Sets border radius to 1px */
+  border: 2px solid #3975EA;
+  /* 1px solid black border */
+  box-shadow: none;
+
+}
+
+.vertical-timeline.vertical-timeline--one-column-left {
+  padding: 0;
+  /* Remove all padding */
+  margin: 0;
+  /* Remove all margin */
+  justify-content: center;
+  /* Center the timeline */
+}
+
+
+
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline--two-columns .vertical-timeline-element-icon {
+    width: 30px;
+    height: 30px;
+    left: 20%;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vertical-timeline::before {
+    left: 8px;
+    /* Adjust left position for smaller screens */
+    max-height: 77%;
+    /* Adjust max height for smaller screens */
+  }
+
+  .vertical-timeline.vertical-timeline--one-column-right::before {
+    right: 8px;
+
+  }
+
+  .vertical-timeline-element-icon {
+    width: 30px;
+    /* Adjust icon size for smaller screens */
+    height: 30px;
+  }
 }

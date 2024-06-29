@@ -16,13 +16,17 @@ export default function Home() {
   return (
     <Container>
       <Hero />
+      <div className="border border-gray-300 border-opacity-50 w-4/5 mx-auto"></div>
+
       <SectionTitle
         title=" Automate your job application process"
+        
       >
-        Focus on what matters most – your skills and experience. Let Job Squad handle
-        the repetitive task of filling out application forms, so you can concentrate on
-
-        advancing your career.
+        <div className="pt-2">
+          Focus on what matters most – your skills and experience. Let Job Squad handle
+          the repetitive task of filling out application forms, so you can concentrate on
+          advancing your career.
+        </div>
       </SectionTitle>
       <Demo />
     
