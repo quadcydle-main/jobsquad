@@ -2,16 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer base {
+
   html,
   body {
     @apply bg-[url('/bg.png')] bg-cover bg-no-repeat bg-center text-black;
     /* Replace '../path/to/your/image.jpg' with your actual image path */
-  }
-
-  /* Override default text color */
-  h1, h2, h3, h4, h5, h6, p, a, span {
-    @apply text-black;
   }
 }
 
@@ -37,8 +35,9 @@
   /* Adjust the width of the timeline */
   /* border-left: 4px dotted rgb(57, 117, 234); Change to dotted line */
   border-color: #3975EA;
-  /* background: var(--line-color); */
+  background: #3975EA;
   margin-top: 20px;
+
 }
 
 .vertical-timeline.vertical-timeline--one-column-right::before {
@@ -53,7 +52,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10%;
-  box-shadow: 0 0 0 1px #ff0000, inset 0 1px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05);
+  box-shadow: 0 0 0 1px #ff0000, inset 0 1px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05)
 }
 
 .vertical-timeline-element-icon.is-hidden {
@@ -63,6 +62,7 @@
   border: 2px solid #3975EA;
   /* 1px solid black border */
   box-shadow: none;
+
 }
 
 .vertical-timeline.vertical-timeline--one-column-left {
@@ -73,6 +73,9 @@
   justify-content: center;
   /* Center the timeline */
 }
+
+
+
 
 @media only screen and (min-width: 1170px) {
   .vertical-timeline--two-columns .vertical-timeline-element-icon {
@@ -93,6 +96,7 @@
 
   .vertical-timeline.vertical-timeline--one-column-right::before {
     right: 8px;
+
   }
 
   .vertical-timeline-element-icon {
