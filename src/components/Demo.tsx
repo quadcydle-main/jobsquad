@@ -25,6 +25,12 @@ export const Demo = () => {
             color: "rgb(57, 117, 234)",
             fontSize: "4rem",
           }}
+          contentArrowStyle={{
+            display: "none",
+            color: "transparent",
+
+
+          }}
           icon={<FaCircle />} // Remove icon if not needed
         >
           <div className="flex flex-col md:flex-row">

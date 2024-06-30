@@ -93,7 +93,9 @@
 .vertical-timeline-element-icon.bounce-in{
   box-shadow: none;
 }
-
+.vertical-timeline-element-content-arrow{
+  display: none;
+}
 
 
 @media only screen and (min-width: 1170px) {
