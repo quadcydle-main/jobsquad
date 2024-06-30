@@ -1,4 +1,5 @@
-import React from "react";
+'use client';
+import React, { use } from "react";
 import Image from "next/image";
 import { Container } from "@/components/Container";
 
