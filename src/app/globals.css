@@ -72,6 +72,10 @@ vertical-timeline vertical-timeline--one-column-left::before {
 
 .vertical-timeline-element-icon.is-hidden {
   box-shadow: none;
+  border-radius: 50%;
+  /* Sets border radius to 1px */
+  border: 2px solid #3975EA;
+  /* 1px solid black border */
 
 }
 
@@ -85,7 +89,9 @@ vertical-timeline vertical-timeline--one-column-left::before {
   justify-content: center;
   /* Center the timeline */
 }
-
+.vertical-timeline-element-icon.bounce-in{
+  box-shadow: none;
+}
 
 
 
