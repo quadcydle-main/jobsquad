@@ -32,7 +32,7 @@ export default function Home() {
     
 
       <Middlesection />
-      <SectionTitle
+      <SectionTitle 
         title="Sit back and relax while jOBSquard does the work for you!"
       >
         This section is to highlight a promo or demo video of your product.

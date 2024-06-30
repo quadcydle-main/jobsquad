@@ -5,7 +5,7 @@ import heroImg from "../../public/img/front.jpg";
 export const Hero = () => {
   return (
     <>
-      <Container className="flex flex-wrap ">
+      <Container id="about" className="flex flex-wrap ">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8 pr-0 sm:pr-10">
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-black lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight ">

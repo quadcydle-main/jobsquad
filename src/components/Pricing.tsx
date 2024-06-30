@@ -3,8 +3,8 @@ import { Container } from "@/components/Container";
 
 const PricingTable = () => {
     return (
-        <Container>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10">
+        <Container >
+            <div id="pricing" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10">
                 <div className="pricing-table gprice-single bg-white shadow-lg rounded-lg overflow-hidden">
                     <div className="head border-b border-gray-300 py-6 transition-all duration-500 hover:border-b-2 border-purple-500">
                         <h4 className="title text-xl font-bold">Basic</h4>
