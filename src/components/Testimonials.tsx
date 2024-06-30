@@ -19,7 +19,7 @@ export const Testimonials = () => {
       </div>
       
     </Container>
-  );
+  );  
 };
 
 export default Testimonials;
