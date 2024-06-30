@@ -27,7 +27,7 @@ export const Navbar = () => {
                       alt="N"
                       width="130"
                       height="90"
-                      className="ml-10"
+                      className="ml-1"
                     />
                   </a>
                 </Link>
@@ -64,7 +64,7 @@ export const Navbar = () => {
                       </Link>
                     ))}
                     <Link href="https://chrome.google.com/webstore/detail/ebopaciecnbemabeiammegechkhpbfmc" legacyBehavior>
-                      <a className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
+                      <a className="w-full px-6 py-2 mt-3 text-center text-white  bg-custom-blue   rounded-md lg:ml-5">
                         Get Started
                       </a>
                     </Link>

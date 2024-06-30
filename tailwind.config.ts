@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
@@ -14,12 +13,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        trueGray: colors.neutral,
+        'custom-blue': '#3975EA', // Define custom color using exact hex code
+        trueGray: colors.trueGray,
       },
-    },
-    fontFamily: {
-      sans: ["Inter", ...defaultTheme.fontFamily.sans],
-      stock: [defaultTheme.fontFamily.sans],
+      fontFamily: {
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        stock: [...defaultTheme.fontFamily.sans],
+      },
     },
   },
   variants: {
@@ -27,4 +27,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;
