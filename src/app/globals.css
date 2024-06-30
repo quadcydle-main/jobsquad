@@ -34,7 +34,7 @@
   width: 2px;
   /* Adjust the width of the timeline */
   /* border-left: 4px dotted rgb(57, 117, 234); Change to dotted line */
-  border-color: #3975EA;
+  /* border-color: #3975EA; */
   background: #3975EA;
   margin-top: 20px;
 
@@ -43,6 +43,9 @@
 .vertical-timeline.vertical-timeline--one-column-right::before {
   right: 18px;
   left: unset;
+  /* border-color: #3975EA; */
+  background: #3975EA;
+
 }
 
 .vertical-timeline-element-icon {
