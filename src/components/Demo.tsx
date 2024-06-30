@@ -11,7 +11,7 @@ import { FaCircle } from "react-icons/fa";
 export const Demo = () => {
   return (
     <Container className="flex flex-col items-center justify-center">
-      <VerticalTimeline layout="1-column" animate={false} lineColor="rgb(57, 117, 234)">
+      <VerticalTimeline layout="1-column" animate={false} lineColor="blue">
         {/* Experience 1 */}
         <VerticalTimelineElement
           contentStyle={{
