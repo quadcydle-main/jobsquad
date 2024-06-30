@@ -1,5 +1,12 @@
 import React from "react";
+import Image from "next/image";
 import { Container } from "@/components/Container";
+import middleImg from "../../public/img/middle.png";
+import tick from "../../public/img/tick.png";
+import icon1 from "../../public/img/icon1.png";
+import icon2 from "../../public/img/icon2.png";
+import icon3 from "../../public/img/icon3.png";
+
 
 export const Middlesection = () => {
   return (
@@ -7,22 +14,39 @@ export const Middlesection = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Increase Efficiency</h2>
-            <p className="text-xl md:text-2xl text-gray-500">
-              Focus on what matters most &ndash; your skills and experience. Let Job Squad handle the repetitive task of filling out application forms, so you can concentrate on advancing your career.
-            </p>
+          <div className="MiddleText">
+            <div className="MiddleText2">
+              <p className="textimg">Sit back and relax while</p>
+              <Image alt="img" src={middleImg} className="imgmid" />
+            </div>
+            <p className="textimg">does the work for you!</p>
           </div>
 
+          <div className="flex flex-col items-center">
+            <div className="middle2con">
+              <div className="middle2">
+                <Image alt="img" className="img2" src={tick}></Image>
+                <p className="textimg2">Save hundred’s of hours using JOBSquad.</p>
+              </div>
+              <div className="middle2">
+                <Image alt="img" className="img2" src={tick}></Image>
+                <p className="textimg2">We automatically fill your job applications on linkedIn.</p>
+              </div>
+              <div className="middle2">
+                <Image alt="img" className="img2" src={tick}></Image>
+                <p className="textimg2">Our extension never gets you blocked.</p>
+              </div>
+            </div>
+          </div>
+          <div className="border border-gray-300 border-opacity-50    mt-20 w-4/5 mx-auto"></div>
+          <br />
+
+
           {/* Items */}
-          <div className="max-w-3xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16">
+          <div className="max-w-5xl mx-auto grid gap-2 pt-20   md:grid-cols-2 lg:grid-cols-3 lg:gap-16">
             {/* 1st item */}
             <div className="flex flex-col items-center text-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
-              <svg className="w-16 h-16 mb-4 text-purple-600" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect width="64" height="64" rx="32" fill="currentColor" />
-                <path className="stroke-current text-purple-100" d="M30 39.313l-4.18 2.197L27 34.628l-5-4.874 6.91-1.004L32 22.49l3.09 6.26L42 29.754l-3 2.924" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd" />
-                <path className="stroke-current text-purple-300" d="M43 42h-9M43 37h-9" strokeLinecap="square" strokeWidth="2" />
-              </svg>
+              <Image className="icons" alt="icon1" src={icon1} />
               <h4 className="text-lg lg:text-xl font-medium mb-2">Maximize Opportunities</h4>
               <p className="text-base lg:text-lg text-gray-500">
                 Never miss out on a potential job opportunity again. Our product continuously scans LinkedIn for relevant positions, ensuring you&apos;re always in the loop and ready to take the next step in your career journey.
@@ -31,11 +55,7 @@ export const Middlesection = () => {
 
             {/* 2nd item */}
             <div className="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="[data-aos-id-blocks]">
-              <svg className="w-16 h-16 mb-4 text-purple-600" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="32" cy="32" r="32" fill="currentColor" />
-                <path className="stroke-current text-purple-100" strokeWidth="2" strokeLinecap="square" d="M21 23h22v18H21z" fill="none" fillRule="evenodd" />
-                <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square" />
-              </svg>
+              <Image className="icons" alt="icon1" src={icon2} />
               <h4 className="text-lg lg:text-xl font-medium mb-2">Track Your Progress</h4>
               <p className="text-base lg:text-lg text-gray-500">
                 Stay organized with our intuitive dashboard, where you can monitor the status of your applications, track responses from employers, and gain valuable insights into your job search.
@@ -44,14 +64,7 @@ export const Middlesection = () => {
 
             {/* 3rd item */}
             <div className="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-blocks]">
-              <svg className="w-16 h-16 mb-4 text-purple-600" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect width="64" height="64" rx="32" fill="currentColor" />
-                <g transform="translate(21 21)" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
-                  <ellipse className="stroke-current text-purple-300" cx="11" cy="11" rx="5.5" ry="11" />
-                  <path className="stroke-current text-purple-100" d="M11 0v22M0 11h22" />
-                  <circle className="stroke-current text-purple-100" cx="11" cy="11" r="11" />
-                </g>
-              </svg>
+              <Image className="icons" alt="icon1" src={icon3} />
               <h4 className="text-lg lg:text-xl font-medium mb-2">Customize Your Approach</h4>
               <p className="text-base lg:text-lg text-gray-500">
                 Tailor your application strategy by setting specific criteria such as location, industry, or job type. LinkedIn AutoApply empowers you to refine your job search parameters, ensuring that every application reflects your unique career aspirations.

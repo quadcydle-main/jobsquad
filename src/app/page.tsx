@@ -32,13 +32,7 @@ export default function Home() {
     
 
       <Middlesection />
-      <SectionTitle 
-        title="Sit back and relax while jOBSquard does the work for you!"
-      >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
-      </SectionTitle>
+      
 
       
 
@@ -47,9 +41,7 @@ export default function Home() {
       
 
 
-      <SectionTitle title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+      <SectionTitle title="Pricing">        
       </SectionTitle>
       <Pricingtable />
       <SectionTitle

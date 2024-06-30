@@ -51,6 +51,7 @@
   background: #3975EA;
 
 }
+
 .vertical-timeline.vertical-timeline--one-column-left::before {
   left: 18px;
   right: unset;
@@ -80,7 +81,7 @@
 
 }
 
-            
+
 
 .vertical-timeline.vertical-timeline--one-column-left {
   padding: 0;
@@ -90,12 +91,118 @@
   justify-content: center;
   /* Center the timeline */
 }
-.vertical-timeline-element-icon.bounce-in{
+
+.vertical-timeline-element-icon.bounce-in {
   box-shadow: none;
 }
-.vertical-timeline-element-content-arrow{
+
+.vertical-timeline-element-content-arrow {
   display: none;
 }
+
+/* #middle section css */
+
+.textimg {
+  font-size: 30px;
+  color: #000;
+  font-weight: 600;
+  width: fit-content;
+  justify-content: center;
+
+}
+
+.MiddleText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 5%;
+  align-items: center;
+}
+
+.MiddleText2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.imgmid {
+  margin-Left: 10px;
+  margin-Right: 10px;
+  height: 50px;
+  width: 130px;
+}
+.middle2{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: top;
+  gap: 30px;
+  padding-top: 20px;
+
+
+}
+.middle2con{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.textimg2 {
+  font-size: 25px;
+  color: #000;
+  font-weight: 600;
+  width: fit-content;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+.img2{
+  height: 50px;
+  width: 50px;
+
+}
+.icons{
+  padding-bottom: 5%;
+}
+
+@media (max-width: 640px) {
+  .textimg {
+    font-size: 20px;
+    /* Smaller font size for mobile */
+  }
+  .img2{
+    height: 30px;
+    width: 30px;
+  }
+  .textimg2 {
+    font-size: 15px;
+    /* Smaller font size for mobile */
+  }
+
+  .MiddleText {
+    flex-direction: column;
+    /* Stack items vertically on mobile */
+    padding-bottom: 10%;
+    /* Adjust padding for mobile */
+  }
+
+  .MiddleText2 {
+    flex-direction: row;
+    /* Stack items vertically on mobile */
+  }
+
+  .imgmid {
+    margin-Left: "3px";
+    margin-Right: "3px";
+    height: 30px;
+    width: 80px;
+
+  }
+}
+
+
+
+
 
 
 @media only screen and (min-width: 1170px) {

@@ -63,7 +63,7 @@ export const Navbar = () => {
                         </a>
                       </Link>
                     ))}
-                    <Link href="/get-started" legacyBehavior>
+                    <Link href="https://chrome.google.com/webstore/detail/ebopaciecnbemabeiammegechkhpbfmc" legacyBehavior>
                       <a className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
                         Get Started
                       </a>

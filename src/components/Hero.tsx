@@ -47,6 +47,8 @@ export const Hero = () => {
               alt="Hero Illustration"
               loading="eager"
               placeholder="blur"
+              
+              style={{ borderRadius: "40px" }}
             />
           </div>
         </div>
