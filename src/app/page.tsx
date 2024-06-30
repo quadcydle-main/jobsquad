@@ -17,10 +17,8 @@ export default function Home() {
     <Container>
       <Hero />
       <div className="border border-gray-300 border-opacity-50 w-4/5 mx-auto"></div>
-
       <SectionTitle
         title=" Automate your job application process"
-        
       >
         <div className="pt-2 text-black">
           Focus on what matters most – your skills and experience. Let Job Squad handle
@@ -29,27 +27,11 @@ export default function Home() {
         </div>
       </SectionTitle>
       <Demo />
-    
-
       <Middlesection />
-      
-
-      
-
-
-
-      
-
-
-      <SectionTitle title="Pricing">        
-      </SectionTitle>
       <Pricingtable />
       <SectionTitle
-        preTitle="Testimonials"
-        title="Here's what our customers said"
-      >
-        Testimonials is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+        title="Don’t just take our word for it!"
+      > 
       </SectionTitle>
 
       <Testimonials />

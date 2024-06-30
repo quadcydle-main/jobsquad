@@ -1,76 +1,104 @@
-import React from "react";
-import { Container } from "@/components/Container";
+    import React from "react";
+    import { Container } from "@/components/Container";
 
-const PricingTable = () => {
+    const pricingData = [
+    {
+        title: "Basic",
+        price: "19",
+        features: [
+        "5 GB Ram",
+        "40GB SSD Cloud Storage",
+        "Month Subscription",
+        "Responsive Framework",
+        "Monthly Billing Software",
+        "1 Free Website (line-through)",
+        ],
+    },
+    {
+        title: "Standard",
+        price: "29",
+        features: [
+        "5 GB Ram",
+        "40GB SSD Cloud Storage",
+        "Month Subscription",
+        "Responsive Framework",
+        "Monthly Billing Software",
+        "1 Free Website (line-through)",
+        ],
+        recommended: true, // Added recommended label
+    },
+    {
+        title: "Premium",
+        price: "39",
+        features: [
+        "5 GB Ram",
+        "40GB SSD Cloud Storage",
+        "Month Subscription",
+        "Responsive Framework",
+        "Monthly Billing Software",
+        "1 Free Website",
+        ],
+    },
+    ];
+
+    const PricingTable = () => {
     return (
-        <Container >
-            <div id="pricing" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10">
-                <div className="pricing-table gprice-single bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div className="head border-b border-gray-300 py-6 transition-all duration-500 hover:border-b-2 border-purple-500">
-                        <h4 className="title text-xl font-bold">Basic</h4>
-                    </div>
-                    <div className="content py-6">
-                        <div className="price bg-gradient-to-r from-purple-600 to-purple-900 w-24 h-24 mx-auto flex items-center justify-center text-white font-bold rounded-full border-4 border-white shadow-md mb-6 transform transition-all duration-500 hover:scale-105">
-                            <h1>$19</h1>
-                        </div>
-                        <ul className="text-center">
-                            <li className="py-2">5 GB Ram</li>
-                            <li className="py-2">40GB SSD Cloud Storage</li>
-                            <li className="py-2">Month Subscription</li>
-                            <li className="py-2">Responsive Framework</li>
-                            <li className="py-2 line-through">Monthly Billing Software</li>
-                            <li className="py-2 line-through">1 Free Website</li>
-                        </ul>
-                        <div className="sign-up text-center mt-6">
-                            <a href="#" className="btn bordered radius bg-gradient-to-r from-purple-600 to-purple-900 text-white py-3 px-8 inline-block transition-all duration-300 hover:shadow-lg">Signup Now</a>
-                        </div>
-                    </div>
+        <Container>
+        <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mt-10 mb-10">
+            Pricing
+        </p>
+        <div
+            id="pricing"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 lg:px-0"
+        >
+            {pricingData.map((plan, index) => (
+            <div
+                key={index}
+                className="pricegrid"
+            >
+                {plan.recommended && (
+                // Recommended label conditionally
+                <div className="recommended bg-[#3975EA] text-white text-center py-2 px-4 rounded-t-3xl">
+                    <span className="text-xs">Recommended</span>
                 </div>
-                <div className="pricing-table gprice-single bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div className="head border-b border-gray-300 py-6 transition-all duration-500 hover:border-b-2 border-purple-500">
-                        <h4 className="title text-xl font-bold">Standard</h4>
-                    </div>
-                    <div className="content py-6">
-                        <div className="price bg-gradient-to-r from-purple-600 to-purple-900 w-24 h-24 mx-auto flex items-center justify-center text-white font-bold rounded-full border-4 border-white shadow-md mb-6 transform transition-all duration-500 hover:scale-105">
-                            <h1>$29</h1>
-                        </div>
-                        <ul className="text-center">
-                            <li className="py-2">5 GB Ram</li>
-                            <li className="py-2">40GB SSD Cloud Storage</li>
-                            <li className="py-2">Month Subscription</li>
-                            <li className="py-2">Responsive Framework</li>
-                            <li className="py-2">Monthly Billing Software</li>
-                            <li className="py-2 line-through">1 Free Website</li>
-                        </ul>
-                        <div className="sign-up text-center mt-6">
-                            <a href="#" className="btn bordered radius bg-gradient-to-r from-purple-600 to-purple-900 text-white py-3 px-8 inline-block transition-all duration-300 hover:shadow-lg">Signup Now</a>
-                        </div>
-                    </div>
+                )}
+                <div className="head py-4 text-center transition-all duration-500">
+                {/* Adjusted font size for title */}
+                <h4 className="title text-3xl md:text-4xl lg:text-5xl font-bold text-[#3975EA]">
+                    {plan.title}
+                </h4>
                 </div>
-                <div className="pricing-table gprice-single bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div className="head border-b border-gray-300 py-6 transition-all duration-500 hover:border-b-2 border-purple-500">
-                        <h4 className="title text-xl font-bold">Premium</h4>
-                    </div>
-                    <div className="content py-6">
-                        <div className="price bg-gradient-to-r from-purple-600 to-purple-900 w-24 h-24 mx-auto flex items-center justify-center text-white font-bold rounded-full border-4 border-white shadow-md mb-6 transform transition-all duration-500 hover:scale-105">
-                            <h1>$39</h1>
-                        </div>
-                        <ul className="text-center">
-                            <li className="py-2">5 GB Ram</li>
-                            <li className="py-2">40GB SSD Cloud Storage</li>
-                            <li className="py-2">Month Subscription</li>
-                            <li className="py-2">Responsive Framework</li>
-                            <li className="py-2">Monthly Billing Software</li>
-                            <li className="py-2">1 Free Website</li>
-                        </ul>
-                        <div className="sign-up text-center mt-6">
-                            <a href="#" className="btn bordered radius bg-gradient-to-r from-purple-600 to-purple-900 text-white py-3 px-8 inline-block transition-all duration-300 hover:shadow-lg">Signup Now</a>
-                        </div>
-                    </div>
+                <div className="content py-4">
+                <div className="price w-20 h-16 text-xl md:text-3xl mx-auto flex items-center justify-center text-[#3975EA] font-bold border-[#3975EA] mb-6">
+                    {/* Adjusted font size for price */}
+                    <h1>${plan.price}</h1>
+                </div>
+                <ul className="text-center text-[#3975EA]">
+                    {plan.features.map((feature, idx) => (
+                    <li
+                        key={idx}
+                        className={`py-2 ${
+                        feature.includes("line-through") ? "line-through" : ""
+                        }`}
+                    >
+                        {feature}
+                    </li>
+                    ))}
+                </ul>
+                <div className="sign-up text-center mt-6">
+                    <a
+                    href="#"
+                    className="btn bordered radius bg-gradient-to-r from-[#3975EA] to-blue-900 text-white py-3 px-8 inline-block transition-all duration-300 hover:shadow-lg rounded-[15px]"
+                    >
+                    Signup Now
+                    </a>
+                </div>
                 </div>
             </div>
+            ))}
+        </div>
         </Container>
     );
-};
+    };
 
-export default PricingTable;
+    export default PricingTable;
