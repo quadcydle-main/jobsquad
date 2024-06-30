@@ -54,8 +54,6 @@
   left: 0;
   width: 40px;
   height: 40px;
-  border-radius: 10%;
-  box-shadow: 0 0 0 1px #ff0000, inset 0 1px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05)
 }
 
 .vertical-timeline-element-icon.is-hidden {
