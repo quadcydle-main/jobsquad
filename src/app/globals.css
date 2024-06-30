@@ -5,6 +5,7 @@
 
 :root {
   --line-color: #3975EA;
+  text: #000;
 }
 
 @layer base {
