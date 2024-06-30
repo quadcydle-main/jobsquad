@@ -4,7 +4,7 @@ import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
 
 
-import { Testimonials } from "@/components/Testimonials";
+import Testimonials from "@/components/Testimonials";
 import { Middlesection } from "@/components/Middlesection";
 import { Cta } from "@/components/Cta";
 import { Demo }   from '@/components/Demo';
@@ -33,9 +33,7 @@ export default function Home() {
         title="Don’t just take our word for it!"
       > 
       </SectionTitle>
-
       <Testimonials />
-
       <Cta />
     </Container>
   );

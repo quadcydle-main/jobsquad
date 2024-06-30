@@ -1,25 +1,56 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 
+// Import your images
 import userOneImg from "../../public/img/user1.jpg";
 import userTwoImg from "../../public/img/user2.jpg";
 import userThreeImg from "../../public/img/user3.jpg";
-import testImg from "../../public/img/test.png"; // Assuming test.png is your background image
 
-export const Testimonials = () => {
+const Testimonials = () => {
   return (
     <Container>
-      <div>
-        <div>
-          <div>
-            <h2>Testimonials</h2>
+
+      <div className="grid1">
+        {/* Testimonial 1 */}
+        <div className="grid2">
+          
+          <div className="flex pt-10 justify-center mb-4">
+            <Image src={userOneImg} alt="User One" className="rounded-full" width={80} height={80} />
+          </div>
+          <div className="p-6 text-gray-300 pb-10 relative z-10 text-center">
+            <p className="text-lg mb-4">"Testimonial 1 tdgfdg dgdfgdf dfgfdgd gdfg dfg dg dg here."</p>
+            <div className="border-b-2  border-gray-300 w-4/5 mb-2 mx-auto"></div>
+            <p className="font-semibold text-gray-400">John Doe</p>
+          </div>
+        </div>
+
+        {/* Testimonial 2 */}
+        <div className="grid2">
+          <div className="flex pt-10 justify-center mb-4">
+            <Image src={userTwoImg} alt="User Two" className="rounded-full" width={80} height={80} />
+          </div>
+          <div className="p-6 text-gray-300 pb-10 relative z-10 text-center">
+            <p className="text-lg mb-4">"Testimonial 2 gffdfdfdgdg dfgdfgdf dfgfdgdf fdgdgdf fdgdfghere."</p>
+            <div className="border-b-2 border-gray-300 w-4/5 mb-2 mx-auto"></div>
+            <p className="font-semibold text-gray-400">Jane Smith</p>
+          </div>
+        </div>
+
+        {/* Testimonial 3 */}
+        <div className="grid2" >
+          <div className="flex pt-10 justify-center mb-4">
+            <Image src={userThreeImg} alt="User Three" className="rounded-full" width={80} height={80} />
+          </div>
+          <div className="p-6 text-gray-300 pb-10 relative z-10 text-center">
+            <p className="text-lg mb-4">"Testimonfffffial fgdfg dfgdfgd dfgdfgd dgfdgd drfgdg  3 content here."</p>
+            <div className="border-b-2  border-gray-300 w-4/5 mb-2 mx-auto"></div>
+            <p className="font-semibold text-gray-400">Mike Johnson</p>
           </div>
         </div>
       </div>
-      
     </Container>
-  );  
+  );
 };
 
 export default Testimonials;

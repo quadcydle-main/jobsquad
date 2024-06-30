@@ -80,6 +80,11 @@
   /* 1px solid black border */
 
 }
+/* In your global CSS or CSS module */
+.shadow-custom {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+}
+
 
 .pricegrid {
   background-color: transparent;
@@ -87,25 +92,12 @@
   border-width: 2px;
   border-style: solid;
   border-color: #3975EA;
-  border-radius: 50px;
- 
+  border-radius: 50px;        /* Sets border radius to 1px */
+  width: 90%;
+  align-items: center;
 
 }
 
-@media (min-width: 768px) {
-  .pricegrid {
-    margin-left: 0px;
-    margin-right: 0px;
-    background-color: transparent;
-    overflow: hidden;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #3975EA;
-
-    border-radius: 50px;
-
-  }
-}
 
 
 .vertical-timeline.vertical-timeline--one-column-left {
@@ -195,10 +187,42 @@
   padding-bottom: 5%;
 }
 
+.grid1{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 90px;
+
+}
+.grid2{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #e8f6ff, #ffffff);
+  
+  border-radius: 40px;
+  min-height: 403px;  
+  width: 30%;
+  gap: 20px;  
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);  
+      
+}
+
 @media (max-width: 640px) {
   .textimg {
     font-size: 20px;
     /* Smaller font size for mobile */
+  }
+  .grid1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid2{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
   }
 
   .img2 {
@@ -207,7 +231,7 @@
   }
 
   .textimg2 {
-    font-size: 15px;
+    font-size: 17px;
     /* Smaller font size for mobile */
   }
 
@@ -230,7 +254,21 @@
     width: 80px;
 
   }
+  .pricegrid {
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: transparent;
+    overflow: hidden;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #3975EA;
+    min-width: 100%;
+
+    border-radius: 50px;
+
+  }
 }
+
 
 
 
