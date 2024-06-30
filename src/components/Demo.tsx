@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import {
   VerticalTimeline,
@@ -44,8 +45,8 @@ export const Demo = () => {
               </p>
             </div>
             <div className="w-full md:w-1/2 text-right">
-              <img
-                src="../img/expvid/atc.gif" // Example path to GIF
+              <Image
+                src="../img/expvid/atc.gif" 
                 alt="Adding extension to Chrome"
                 className="max-w-full max-h-full rounded-lg"
               />
