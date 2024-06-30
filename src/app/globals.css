@@ -51,7 +51,7 @@
   background: #3975EA;
 
 }
-vertical-timeline vertical-timeline--one-column-left::before {
+.vertical-timeline.vertical-timeline--one-column-left::before {
   left: 18px;
   right: unset;
   background: #3975EA;
