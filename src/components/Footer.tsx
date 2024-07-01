@@ -78,5 +78,5 @@ export const Footer = () => {
 
       </nav>
     </div>
-  );
+  );  
 };

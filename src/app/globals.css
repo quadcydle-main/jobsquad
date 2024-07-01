@@ -209,9 +209,26 @@
       
 }
 
+@media (max-width: 400px) {
+  .textimg {
+    font-size: 20px;
+    /* Smaller font size for mobile */
+  }
+  .textimg2 {
+    font-size: 20px;
+    /* Smaller font size for mobile */
+  }
+  .imgmid {
+    margin-Left: "3px";
+    margin-Right: "3px";
+    height: 20px;
+    width: 50px;
+
+  }
+}
 @media (max-width: 640px) {
   .textimg {
-    font-size: 16px;
+    font-size: 20px;
     /* Smaller font size for mobile */
   }
   .grid1{
@@ -231,7 +248,7 @@
   }
 
   .textimg2 {
-    font-size: 16px;
+    font-size: 20px;
     /* Smaller font size for mobile */
   }
 
@@ -250,8 +267,8 @@
   .imgmid {
     margin-Left: "3px";
     margin-Right: "3px";
-    height: 20px;
-    width: 50px;
+    height: 30px;
+    width: 70px;
 
   }
   .pricegrid {
