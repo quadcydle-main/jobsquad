@@ -211,7 +211,7 @@
 
 @media (max-width: 640px) {
   .textimg {
-    font-size: 20px;
+    font-size: 16px;
     /* Smaller font size for mobile */
   }
   .grid1{
@@ -231,7 +231,7 @@
   }
 
   .textimg2 {
-    font-size: 17px;
+    font-size: 16px;
     /* Smaller font size for mobile */
   }
 
@@ -250,8 +250,8 @@
   .imgmid {
     margin-Left: "3px";
     margin-Right: "3px";
-    height: 30px;
-    width: 80px;
+    height: 20px;
+    width: 50px;
 
   }
   .pricegrid {
@@ -286,14 +286,14 @@
 
 @media screen and (max-width: 768px) {
   .vertical-timeline::before {
-    left: 8px;
+    left: 0px;
     /* Adjust left position for smaller screens */
     max-height: 77%;
     /* Adjust max height for smaller screens */
   }
 
   .vertical-timeline.vertical-timeline--one-column-right::before {
-    right: 8px;
+    right: 0px;
 
   }
 

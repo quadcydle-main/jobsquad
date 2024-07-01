@@ -15,13 +15,13 @@ export const Footer = () => {
   ];
 
   return (
-    <div className="w-full item-center justify-center">
-      <nav className="container relative flex flex-col  p-10 lg:flex-row  bg-blue  items-center  w-full justify-between lg:justify-between ">
+    <div className="flex flex-row item-center justify-center w-full p-0 m-0 ">
+      <nav className="container relative flex flex-col  p-10 lg:flex-row  bg-blue  items-center  w-full justify-center lg:justify-between ">
         {/* Logo */}
         <Disclosure>
           {({ open }) => (
             <>
-              <div className="flex flex-wrap items-center justify-center w-full lg:w-auto mb-4 lg:mb-0">
+              <div className="flex flex-col items-left justify-center w-full lg:w-auto mb-4 lg:mb-0">
                 <Link href="/" legacyBehavior>
                   <a className="flex items-center lg:space-x-2 text-2xl font-medium text-indigo-500">
                     <Image
@@ -39,12 +39,12 @@ export const Footer = () => {
         </Disclosure>
 
         {/* Menu for mobile */}
-        <div className="flex flex-col items-center justify-center lg:hidden">
+        <div className="flex flex-col items-start justify-start lg:hidden">
           <ul className="py-6">
             {navigation.map((menu, index) => (
               <li className="mb-3" key={index}>
                 <Link href={menu.href} legacyBehavior>
-                  <a className="block px-4 py-2  text-lg items-center justify-centerfont-normal text-gray-800 no-underline rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
+                  <a className="flex flex-col px-4 py-2 text-lg items-start justify-start font-normal text-gray-800 no-underline rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
                     {menu.name}
                   </a>
                 </Link>
@@ -52,6 +52,7 @@ export const Footer = () => {
             ))}
           </ul>
         </div>
+            
 
 
         {/* Menu for desktop */}
@@ -69,11 +70,12 @@ export const Footer = () => {
           </ul>
         </div>
         {/* Social icons */}
-        <div className="flex flex-row gap-3 lg:gap-6 items-center justify-center mt-6 lg:mr-10 lg:mt-0 lg:flex-row lg:items-center">
+        <div className="flex flex-row lg:flex-row gap-3 lg:gap-6 items-start lg:items-center justify-left mt-6 lg:mr-10 lg:mt-0">
           <Image alt="social" src={Social} width={30} height={30} />
           <Image alt="social" src={Social} width={30} height={30} />
           <Image alt="social" src={Social} width={30} height={30} />
         </div>
+
       </nav>
     </div>
   );
