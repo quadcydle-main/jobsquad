@@ -1,5 +1,14 @@
 'use client';
 import React from "react";
+import Image from "next/image";
+
+import link from "../../public/img/link.png";
+import select from "../../public/img/select.svg";
+import sapp from "../../public/img/sapp.svg";
+import capp from "../../public/img/capp.svg";
+import pin from "../../public/img/pin.svg";
+import puzzle from "../../public/img/puzzle.svg";
+
 import { Container } from "@/components/Container";
 import {
   VerticalTimeline,
@@ -35,15 +44,15 @@ export const Demo = () => {
         >
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 md:mr-4 mb-4 mr-10 md:mb-0" style={{ alignSelf: "flex-start" }}>
-              <h2 className="font-semibold capitalize">Add extension to chrome</h2>
+              <h2 className="font-semibold lg:text-xl capitalize">Add extension to chrome </h2>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                1. Open the JOBSquad Extension page.
+                <b>1.</b> Open the <a href="https://chrome.google.com/webstore/detail/ebopaciecnbemabeiammegechkhpbfmc">JOBSquad Extension page.<Image alt="link" src={link} width={20} height={20} className="ml-2 hidden md:inline" /> </a>
               </p>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                2. Click on Add to Chrome
+                <b>2.</b> Click on <b>Add to Chrome.</b>
               </p>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                3. A pop-up will appear. Click on Add extension
+                <b>3.</b> A pop-up will appear. Click on <b>Add extension.</b>
               </p>
             </div>
             <div className="w-full md:w-1/2 text-right">
@@ -73,14 +82,21 @@ export const Demo = () => {
         >
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 md:mr-4 mb-4 mr-10 md:mb-0" style={{ alignSelf: "flex-start" }}>
-              <h2 className="font-semibold capitalize">Pin the extension</h2>
-              <p className="!mt-1 !font-normal text-gray-700 ">
-                1. On the top right corner of the browser click on extensions.
+              <h2 className="font-semibold lg:text-xl capitalize">Pin the extension</h2>
+              <p className="!mt-1 !font-normal text-gray-700">
+                <b>1.</b>On the top right corner of the browser click on extensions.
+                <Image alt="link" src={puzzle} width={15} height={15} className="ml-2 hidden md:inline" />
+
               </p>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                2. Pin JOBSquad extension to the top by clicking on pin.
+                <b>2.</b>  Pin JOBSquad extension to the top by clicking on pin.
+                <Image alt="link" src={pin} width={15} height={15} className="ml-2 hidden md:inline" />
               </p>
             </div>
+
+
+
+
             <div className="w-full md:w-1/2 text-right">
               <img
                 src="../img/expvid/pe.gif" // Example path to GIF
@@ -108,18 +124,20 @@ export const Demo = () => {
         >
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 md:mr-4 mb-4 mr-10 md:mb-0" style={{ alignSelf: "flex-start" }}>
-              <h2 className="font-semibold capitalize">Sign in with LinkedIn</h2>
+              <h2 className="font-semibold lg:text-xl capitalize">Sign in with LinkedIn</h2>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                1. On the top right corner of the browser click on extensions.
+                <b>1.</b> On the top right corner of the browser click on extensions.
+                <Image alt="link" src={puzzle} width={15} height={15} className="ml-2 hidden md:inline" />
+
               </p>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                2. Click on the Job Squad Extension
+                <b>2.</b> Click on the Job Squad Extension
               </p>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                3. Click on Open Dashboard.
+                <b>3.</b> Click on Open Dashboard.
               </p>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                4. Click on Login with LinkedIn.
+                <b>4.</b> Click on Login with LinkedIn.
               </p>
             </div>
             <div className="w-full md:w-1/2 text-right">
@@ -149,15 +167,16 @@ export const Demo = () => {
         >
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 md:mr-4 mb-4 mr-10 md:mb-0" style={{ alignSelf: "flex-start" }}>
-              <h2 className="font-semibold capitalize">Create your Application</h2>
+              <h2 className="font-semibold lg:text-xl capitalize">Create your Application</h2>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                1. Start your Job Application Process by clicking on CREATE APPLICATION on the menu on the left.
+
+                <b>1.</b> Start your Job Application Process by clicking on <p className="ml-2 inline text-extrabold md:hidden">CREATE APPLICATION </p><Image alt="link" src={capp} width={150} height={20} className="ml-2 hidden md:inline" /> on the menu on the left.
               </p>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                2. Fill the Job Application form, Upload your resume, and click on Submit button on the bottom.
+                <b>2.</b> Fill the Job Application form, Upload your resume, and click on Submit button on the bottom.
               </p>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                3. Click on Close button.
+                <b>3.</b> Click on Close button.
               </p>
             </div>
             <div className="w-full md:w-1/2 text-right">
@@ -187,15 +206,17 @@ export const Demo = () => {
         >
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 md:mr-4 mb-4 mr-10 md:mb-0" style={{ alignSelf: "flex-start" }}>
-              <h2 className="font-semibold capitalize">Start Applying</h2>
+              <h2 className="font-semibold lg:text-xl capitalize">Start Applying</h2>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                1. On the Start Applying page click on SELECT button under your card to select it.
+                <b>1.</b> On the Start Applying page click on <p className="ml-2 inline text-bold smd:hidden">SELECT </p>
+                <Image alt="link" src={select} width={40} height={20} className="ml-2 hidden md:inline" /> 
+                button under your card to select it.
               </p>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                2. Click Close to close the pop up after your card is selected.
+                <b>2.</b> Click Close to close the pop up after your card is selected.
               </p>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                3. Start Applying by clicking on START APPLYING WITH APPLICATION ID,
+                <b>3.</b> Start Applying by clicking on <Image alt="link" src={sapp} width={160} height={25} className="md:inline" />
               </p>
             </div>
             <div className="w-full md:w-1/2 text-right">

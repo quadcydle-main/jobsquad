@@ -69,7 +69,7 @@ const PricingTable = () => {
                             </h4>
                         </div>
                         <div className="content py-4">
-                            <div className="price w-20 h-16 text-xl md:text-3xl mx-auto flex items-center justify-center text-[#3975EA] font-bold border-[#3975EA] mb-6">
+                            <div className="price  text-2xl lg:text-3xl mx-auto flex items-center justify-center text-[#3975EA] font-bold border-[#3975EA] mb-6">
                                 {/* Adjusted font size for price */}
                                 <h1>${plan.price}</h1>
                             </div>
