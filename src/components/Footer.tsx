@@ -52,7 +52,7 @@ export const Footer = () => {
             ))}
           </ul>
         </div>
-            
+
 
 
         {/* Menu for desktop */}
@@ -70,7 +70,7 @@ export const Footer = () => {
           </ul>
         </div>
         {/* Social icons */}
-        <div className="flex flex-row lg:flex-row gap-3 lg:gap-6 items-start lg:items-center justify-left mt-6 lg:mr-10 lg:mt-0">
+        <div className="flex flex-row lg:flex-row gap-3 lg:gap-6 items-start lg:items-center justify-start mt-6 lg:mr-10 lg:mt-0">
           <Image alt="social" src={Social} width={30} height={30} />
           <Image alt="social" src={Social} width={30} height={30} />
           <Image alt="social" src={Social} width={30} height={30} />
