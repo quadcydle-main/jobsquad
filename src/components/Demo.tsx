@@ -46,7 +46,7 @@ export const Demo = () => {
             <div className="w-full md:w-1/2 md:mr-4 mb-4 mr-10 md:mb-0" style={{ alignSelf: "flex-start" }}>
               <h2 className="font-semibold lg:text-xl capitalize">Add extension to chrome </h2>
               <p className="!mt-1 !font-normal text-gray-700 ">
-                <b>1.</b> Open the <a href="https://chrome.google.com/webstore/detail/ebopaciecnbemabeiammegechkhpbfmc">JOBSquad Extension page.<Image alt="link" src={link} width={20} height={20} className="ml-2 hidden md:inline" /> </a>
+                <b>1.</b> Open the <a className="text-custom-blue" href="https://chrome.google.com/webstore/detail/ebopaciecnbemabeiammegechkhpbfmc">JOBSquad Extension page.<Image alt="link" src={link} width={20} height={20} className="ml-2 hidden md:inline" /> </a>
               </p>
               <p className="!mt-1 !font-normal text-gray-700 ">
                 <b>2.</b> Click on <b>Add to Chrome.</b>
