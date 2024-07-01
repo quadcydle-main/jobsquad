@@ -13,7 +13,7 @@ export const Hero = () => {
               job with just one
               click!
             </h1>
-            <p className="py-7 text-lg leading-normal text-gray-500 lg:text-xl xl:text-2xl ">
+            <p className="py-7 text-sm   leading-normal text-gray-500 lg:text-xl xl:text-2xl ">
               Effortlessly Apply for Your Dream Job on LinkedIn with JOBSquad.
               Automate Your Job Applications and Land Opportunities Faster.
               Take the next step in your career journey by installing JOBSquad today!
