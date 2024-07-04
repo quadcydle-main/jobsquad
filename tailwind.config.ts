@@ -13,7 +13,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'custom-blue': '#3975EA', // Define custom color using exact hex code
+        'custom-blue': '#3975EA',
+        'custom-blue2': '#5A8AF2', // Define custom color using exact hex code
         trueGray: colors.trueGray,
       },
       fontFamily: {

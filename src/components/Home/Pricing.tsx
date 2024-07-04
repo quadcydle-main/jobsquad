@@ -44,11 +44,11 @@ const pricingData = [
 const PricingTable = () => {
     return (
         <Container>
-            <p className="text-3xl  md:text-3xl lg:text-4xl lg:mr-10 font-bold text-center mt-10 mb-10">
+            <p id="pricing" className="text-3xl  md:text-3xl lg:text-4xl lg:mr-10 font-bold text-center mt-10 mb-10">
                 Pricing
             </p>
             <div
-                id="pricing"
+                
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 lg:px-0"
             >
                 {pricingData.map((plan, index) => (
