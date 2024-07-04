@@ -4,7 +4,7 @@
 
 
 :root {
-  --line-color: #3975EA;
+  /* --line-color: #3975EA; */
   text: #000;
 }
 
@@ -37,9 +37,9 @@
   max-height: 79%;
   width: 2px;
   /* Adjust the width of the timeline */
-  /* border-left: 4px dotted rgb(57, 117, 234); Change to dotted line */
+  border-left: 3px dotted rgb(57, 117, 234); 
   /* border-color: #3975EA; */
-  background: var(--line-color);
+  /* background: var(--line-color); */
   margin-top: 20px;
 
 }
@@ -48,14 +48,14 @@
   right: 18px;
   left: unset;
   /* border-color: #3975EA; */
-  background: #3975EA;
+  /* background: #3975EA; */
 
 }
 
 .vertical-timeline.vertical-timeline--one-column-left::before {
   left: 18px;
   right: unset;
-  background: #3975EA;
+  /* background: #3975EA; */
 
 }
 
