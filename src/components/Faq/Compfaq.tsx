@@ -41,7 +41,7 @@ const Compfaq = () => {
         <div key={index} className="mb-4">
           <button
             onClick={() => toggleFaq(index)}
-            className="w-full text-left bg-blue-600 text-white px-4 py-2 rounded-lg focus:outline-none"
+            className="w-full text-left bg-white text-black border border-custom-blue px-4 py-2 rounded-sm focus:text-white focus:bg-custom-blue focus:border focus:border-blue-600"
           >
             {faq.question}
             <span className="float-right">{openIndex === index ? '▲' : '▼'}</span>

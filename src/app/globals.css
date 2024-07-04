@@ -18,6 +18,10 @@
   }
 }
 
+.containbg {
+  background: url('/bg.webp');
+}
+
 /* Tailwind CSS Styles for Vertical Timeline Component */
 
 .vertical-timeline-element--work .vertical-timeline-element-content-arrow {

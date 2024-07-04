@@ -3,14 +3,16 @@ import {Container}  from '../../components/Container';
 
 const About = () => {
   return (
-      <Container>
+      <div className='containbg'>
+        <Container>
         
-        <main>
-          <h1>About</h1>
-          <p>This is the About page content.</p>
-        </main>
+          
+            <h1>About</h1>
+            <p>This is the About page content.</p>
+          
         
-      </Container>
+        </Container>
+      </div>
   );
 };
 

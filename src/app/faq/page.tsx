@@ -5,13 +5,15 @@ import Faqimage from '../../components/Faq/Faqimage';
 
 const Faq = () => {
   return (
-      <Container>
+      <div className='containbg'>
+        <Container>
         
-        <Faqimage/>
-        <Compfaq/>
+          <Faqimage/>
+          <Compfaq/>
         
         
-      </Container>
+        </Container>
+      </div>
   );
 };
 

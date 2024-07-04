@@ -1,25 +1,25 @@
-"use client";
-import Link from "next/link";
-import Image from "next/image";
-import { Disclosure } from "@headlessui/react";
+'use client';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Disclosure } from '@headlessui/react';
 
 export const Navbar = () => {
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
-    { name: "Pricing", href: "/#pricing" },
-    { name: "Contact Us", href: "/contact" },
-    { name: "FAQs", href: "/faq" },
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Pricing', href: '/#pricing' },
+    { name: 'Contact Us', href: '/contact' },
+    { name: 'FAQs', href: '/faq' },
   ];
 
   return (
-    <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
+    <div className="w-full bg-transparent">
+      <nav className="container relative flex flex-wrap bg-transparent items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
         {/* Logo */}
         <Disclosure>
-          {({ open }) => (
+          {({ open, close }) => (
             <>
-              <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
+              <div className="flex flex-wrap items-center bg-transparent justify-between w-full lg:w-auto">
                 <Link href="/" legacyBehavior>
                   <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <Image
@@ -34,11 +34,13 @@ export const Navbar = () => {
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
+                  className="px-2 py-1 ml-auto text-gray-500 bg-transparent rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
+                >
                   <svg
                     className="w-6 h-6 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
+                    viewBox="0 0 24 24"
+                  >
                     {open ? (
                       <path
                         fillRule="evenodd"
@@ -55,20 +57,27 @@ export const Navbar = () => {
                 </Disclosure.Button>
 
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
-                  <>
-                    {navigation.map((item, index) => (
-                      <Link key={index} href={item.href} legacyBehavior>
-                        <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
-                          {item.name}
-                        </a>
-                      </Link>
-                    ))}
-                    <Link href="https://chrome.google.com/webstore/detail/ebopaciecnbemabeiammegechkhpbfmc" legacyBehavior>
-                      <a className="w-full px-6 py-2 mt-3 text-center text-white  bg-custom-blue   rounded-md lg:ml-5">
-                        Get Started
+                  {navigation.map((item, index) => (
+                    <Link key={index} href={item.href} legacyBehavior>
+                      <a
+                        className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none"
+                        onClick={() => close()} // Close the menu after clicking a link
+                      >
+                        {item.name}
                       </a>
                     </Link>
-                  </>
+                  ))}
+                  <Link
+                    href="https://chrome.google.com/webstore/detail/ebopaciecnbemabeiammegechkhpbfmc"
+                    legacyBehavior
+                  >
+                    <a
+                      className="w-full px-6 py-2 mt-3 text-center text-white bg-custom-blue rounded-md lg:ml-5"
+                      onClick={() => close()} // Close the menu after clicking a link
+                    >
+                      Get Started
+                    </a>
+                  </Link>
                 </Disclosure.Panel>
               </div>
             </>
