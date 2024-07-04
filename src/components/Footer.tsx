@@ -25,7 +25,7 @@ export const Footer = () => {
                 <Link href="/" legacyBehavior>
                   <a className="flex items-center lg:space-x-2 text-2xl font-medium text-indigo-500">
                     <Image
-                      src="/img/logo.png"
+                      src="/img/home/logo.png"
                       alt="N"
                       width="130"
                       height="90"

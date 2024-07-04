@@ -2,12 +2,12 @@
 import React from "react";
 import Image from "next/image";
 
-import link from "../../public/img/home/link.png";
-import select from "../../public/img/home/select.svg";
-import sapp from "../../public/img/home/sapp.svg";
-import capp from "../../public/img/home/capp.svg";
-import pin from "../../public/img/home/pin.svg";
-import puzzle from "../../public/img/home/puzzle.svg";
+import link from "../../../public/img/home/link.png";
+import select from "../../../public/img/home/select.svg";
+import sapp from "../../../public/img/home/sapp.svg";
+import capp from "../../../public/img/home/capp.svg";
+import pin from "../../../public/img/home/pin.svg";
+import puzzle from "../../../public/img/home/puzzle.svg";
 
 import { Container } from "@/components/Container";
 import {

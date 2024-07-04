@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import { Container } from "@/components/Container";
-import middleImg from "../../public/img/home/middle.png";
-import tick from "../../public/img/home/tick.png";
-import icon1 from "../../public/img/home/icon1.png";
-import icon2 from "../../public/img/home/icon2.png";
-import icon3 from "../../public/img/home/icon3.png";
+import middleImg from "../../../public/img/home/middle.png";
+import tick from "../../../public/img/home/tick.png";
+import icon1 from "../../../public/img/home/icon1.png";
+import icon2 from "../../../public/img/home/icon2.png";
+import icon3 from "../../../public/img/home/icon3.png";
 
 
 export const Middlesection = () => {

@@ -4,9 +4,9 @@ import Image from "next/image";
 import { Container } from "@/components/Container";
 
 // Import your images
-import userOneImg from "../../public/img/home/user1.jpg";
-import userTwoImg from "../../public/img/home/user2.jpg";
-import userThreeImg from "../../public/img/home/user3.jpg";
+import userOneImg from "../../../public/img/home/user1.jpg";
+import userTwoImg from "../../../public/img/home/user2.jpg";
+import userThreeImg from "../../../public/img/home/user3.jpg";
 
 const Testimonials = () => {
   return (

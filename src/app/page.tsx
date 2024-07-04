@@ -1,14 +1,14 @@
 
 import { Container } from "@/components/Container";
-import { Hero } from "@/components/Hero";
+import { Hero } from "@/components/Home/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
 
 
-import Testimonials from "@/components/Testimonials";
-import { Middlesection } from "@/components/Middlesection";
-import { Cta } from "@/components/Cta";
-import { Demo }   from '@/components/Demo';
-import Pricingtable from "@/components/Pricing";
+import Testimonials from "@/components/Home/Testimonials";
+import { Middlesection } from "@/components/Home/Middlesection";
+import { Cta } from "@/components/Home/Cta";
+import { Demo }   from '@/components/Home/Demo';
+import Pricingtable from "@/components/Home/Pricing";
 
 
 

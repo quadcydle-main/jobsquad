@@ -12,6 +12,7 @@
 
   html,
   body {
+    background: #ffffff;
     @apply bg-[url('/bg.webp')] bg-cover bg-no-repeat bg-center text-black;
     /* Replace '../path/to/your/image.jpg' with your actual image path */
   }
