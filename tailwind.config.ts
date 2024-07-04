@@ -14,7 +14,8 @@ const config: Config = {
     extend: {
       colors: {
         'custom-blue': '#3975EA',
-        'custom-blue2': '#5A8AF2', // Define custom color using exact hex code
+        'custom-blue2': '#5A8AF2',
+        'custom-blue3': '#5A8AF2', // Define custom color using exact hex code
         trueGray: colors.trueGray,
       },
       fontFamily: {
