@@ -112,10 +112,10 @@ export const Footer = () => {
             </div>
 
             {/* Bottom area */}
-            <div className="md:flex md:items-center md:justify-between">
+            <div className="md:flex items-center md:items-center md:justify-between">
 
               {/* Social links */}
-              <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
+              <ul className="flex mb-4 justify-center md:order-1 md:ml-4 md:mb-0">
                 <li>
                   <Link href="/" className="flex justify-center items-center text-purple-600 bg-custom-blue hover:text-gray-100 hover:bg-custom-blue2 rounded-full transition duration-150 ease-in-out" aria-label="Twitter">
                     <svg className="w-8 h-8 fill-white" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -156,7 +156,7 @@ export const Footer = () => {
               </ul>
 
               {/* Copyrights note */}
-              <div className="text-gray-600 text-sm mr-4">&copy; Jobsquad.com. All rights reserved.</div>
+              <div className="text-gray-600 text-sm text-center lg:mr-4">&copy; Jobsquad.com. All rights reserved.</div>
 
             </div>
 
