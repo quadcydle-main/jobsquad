@@ -52,7 +52,7 @@ const Form = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-lg">
-      <h1 className="text-3xl font-bold text-center text-blue-600 mb-8">We're here to help</h1>
+      <h1 className="text-3xl font-bold text-center text-blue-600 mb-8">We&rsquo;re here to help</h1>
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 p-4">
           <Image src="/path/to/your/image.png" alt="Contact" width={300} height={200} className="mb-4" />
