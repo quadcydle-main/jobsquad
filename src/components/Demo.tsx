@@ -2,12 +2,12 @@
 import React from "react";
 import Image from "next/image";
 
-import link from "../../public/img/link.png";
-import select from "../../public/img/select.svg";
-import sapp from "../../public/img/sapp.svg";
-import capp from "../../public/img/capp.svg";
-import pin from "../../public/img/pin.svg";
-import puzzle from "../../public/img/puzzle.svg";
+import link from "../../public/img/home/link.png";
+import select from "../../public/img/home/select.svg";
+import sapp from "../../public/img/home/sapp.svg";
+import capp from "../../public/img/home/capp.svg";
+import pin from "../../public/img/home/pin.svg";
+import puzzle from "../../public/img/home/puzzle.svg";
 
 import { Container } from "@/components/Container";
 import {
@@ -57,7 +57,7 @@ export const Demo = () => {
             </div>
             <div className="w-full md:w-1/2 text-right">
               <img
-                src="../img/expvid/atc.gif" // Example path to GIF
+                src="../img/home/expvid/atc.gif" // Example path to GIF
                 alt="GIF"
                 className="max-w-full max-h-full rounded-lg"
               />
@@ -99,7 +99,7 @@ export const Demo = () => {
 
             <div className="w-full md:w-1/2 text-right">
               <img
-                src="../img/expvid/pe.gif" // Example path to GIF
+                src="../img/home/expvid/pe.gif" // Example path to GIF
                 alt="GIF"
                 className="max-w-full max-h-full rounded-lg"
               />
@@ -142,7 +142,7 @@ export const Demo = () => {
             </div>
             <div className="w-full md:w-1/2 text-right">
               <img
-                src="../img/expvid/l.gif" // Example path to GIF
+                src="../img/home/expvid/l.gif" // Example path to GIF
                 alt="GIF"
                 className="max-w-full max-h-full rounded-lg"
               />
@@ -181,7 +181,7 @@ export const Demo = () => {
             </div>
             <div className="w-full md:w-1/2 text-right">
               <img
-                src="../img/expvid/ca.gif" // Example path to GIF
+                src="../img/home/expvid/ca.gif" // Example path to GIF
                 alt="GIF"
                 className="max-w-full max-h-full rounded-lg"
               />
@@ -221,7 +221,7 @@ export const Demo = () => {
             </div>
             <div className="w-full md:w-1/2 text-right">
               <img
-                src="../img/expvid/sa.gif" // Example path to GIF
+                src="../img/home/expvid/sa.gif" // Example path to GIF
                 alt="GIF"
                 className="max-w-full max-h-full rounded-lg"
               />

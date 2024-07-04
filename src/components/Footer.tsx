@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 
-import Social from "../../public/img/icon1.png";
+import Social from "../../public/img/home/icon1.png";
 
 export const Footer = () => {
   const navigation = [
