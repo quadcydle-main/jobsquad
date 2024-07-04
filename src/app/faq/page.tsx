@@ -1,14 +1,15 @@
 
 import {Container}  from '../../components/Container';
+import Compfaq from '../../components/Faq/Compfaq';
+import Faqimage from '../../components/Faq/Faqimage';
 
 const Faq = () => {
   return (
       <Container>
         
-        <main>
-          <h1>Faq</h1>
-          <p>This is the Faq page content.</p>
-        </main>
+        <Faqimage/>
+        <Compfaq/>
+        
         
       </Container>
   );
