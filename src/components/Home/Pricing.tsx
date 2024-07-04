@@ -4,7 +4,7 @@ import { Container } from "@/components/Container";
 const pricingData = [
     {
         title: "Basic",
-        price: "19",
+        price: "99/mo",
         features: [
             "5 GB Ram",
             "40GB SSD Cloud Storage",
@@ -15,8 +15,8 @@ const pricingData = [
         ],
     },
     {
-        title: "Standard",
-        price: "29",
+        title: "Premium",
+        price: "199/mo",
         features: [
             "5 GB Ram",
             "40GB SSD Cloud Storage",
@@ -28,8 +28,8 @@ const pricingData = [
         recommended: true, // Added recommended label
     },
     {
-        title: "Premium",
-        price: "39",
+        title: "Unlimited",
+        price: "399/mo",
         features: [
             "5 GB Ram",
             "40GB SSD Cloud Storage",
@@ -89,7 +89,7 @@ const PricingTable = () => {
                                     href="#"
                                     className="btn bordered radius  bg-[#3975EA]  text-white py-3 px-8 inline-block transition-all duration-300 hover:shadow-lg rounded-[15px]"
                                 >
-                                    Signup Now
+                                    Buy Now
                                 </a>
                             </div>
                         </div>

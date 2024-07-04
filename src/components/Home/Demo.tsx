@@ -8,6 +8,7 @@ import sapp from "../../../public/img/home/sapp.svg";
 import capp from "../../../public/img/home/capp.svg";
 import pin from "../../../public/img/home/pin.svg";
 import puzzle from "../../../public/img/home/puzzle.svg";
+import demovid from "../../../public/img/home/expvid/demovid.gif";
 
 import { Container } from "@/components/Container";
 import {
@@ -16,10 +17,16 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FaCircle } from "react-icons/fa";
+import { SectionTitle } from "../SectionTitle";
 
 export const Demo = () => {
   return (
     <Container className="flex flex-col items-center justify-center">
+      <SectionTitle 
+      title="Watch the 5-step guide to land you deam job"
+      >
+      </SectionTitle>
+      <Image src={demovid} alt="dmeovid"></Image>
       <VerticalTimeline layout="1-column" animate={false} lineColor="">
         {/* Experience 1 */}
         <VerticalTimelineElement

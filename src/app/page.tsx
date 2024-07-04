@@ -26,6 +26,8 @@ export default function Home() {
           advancing your career.
         </div>
       </SectionTitle>
+  
+
       <Demo />
       <Middlesection />
       <Pricingtable />

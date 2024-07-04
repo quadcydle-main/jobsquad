@@ -6,7 +6,7 @@ export const Cta = () => {
     <Container>
       <div className="flex flex-wrap items-center justify-between w-full max-w-6xl gap-5 mx-auto text-black px-7 py-7 lg:px-12 lg:py-12 lg:flex-nowrap rounded-xl bg-gradient-to-r from-[#e8f6ff] to-white shadow-custom">
         <div className="flex-grow text-center lg:text-left">
-          <h2 className="text-2xl font-medium lg:text-3xl">
+          <h2 className="text-2xl font-bold lg:text-3xl">
             Stay in the loop!
           </h2>
           <p className="mt-2 text-sm font-medium text-black text-opacity-90 lg:text-xl">
