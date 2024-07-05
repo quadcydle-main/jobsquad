@@ -13,13 +13,13 @@
   html,
   body {
     background: #ffffff;
-    @apply bg-[url('/bg.webp')] bg-cover bg-no-repeat bg-center text-black;
+    @apply bg-[url('/bg.png')] bg-cover bg-no-repeat bg-center text-black;
     /* Replace '../path/to/your/image.jpg' with your actual image path */
   }
 }
 
 .containbg {
-  background: url('/bg.webp');
+  background: url('/bg.png');
 }
 
 .missionbg {
