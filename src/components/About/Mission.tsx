@@ -15,11 +15,5 @@ export const Mission = () => {
                 </p>
             </div>
         </div>
-
-
-
-
-
-
     );
 };
