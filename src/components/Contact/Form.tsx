@@ -5,9 +5,9 @@ import Image from 'next/image';
 
 const Form = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: ""
   });
 
   const [loading, setLoading] = useState(false);
