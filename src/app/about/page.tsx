@@ -1,19 +1,18 @@
+import React from "react";
+import { Aboutimgsection } from "@/components/About/Aboutimgsection";
+import { Mid } from "@/components/About/Mid";
+import { Mission } from "@/components/About/Mission";
 
-import {Container}  from '../../components/Container';
-
-const About = () => {
+export const About = () => {
   return (
-      <div className='containbg'>
-        <Container>
-        
-          
-            <h1>About</h1>
-            <p>This is the About page content.</p>
-          
-        
-        </Container>
-      </div>
+    <div>
+      <Aboutimgsection />
+      <Mid />
+      <Mission />
+    </div>
+    
+    
   );
 };
 
-export default About;
+export default About

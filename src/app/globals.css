@@ -22,6 +22,69 @@
   background: url('/bg.webp');
 }
 
+.missionbg {
+  background: url('../../public/img/about/missionbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width:100%;
+}
+@media screen and (max-width: 768px) {
+  .missionbg {
+    background: #ffffff;
+    height: 100%;
+    width:100%;
+  }
+  
+}
+
+.faqimg {
+  height: 100%;
+  width: 100%;
+  padding:30px
+
+}
+
+.abtimg {
+  height: 90%;
+  width: 90%;
+  padding:30px;
+
+
+}
+
+
+.formbg{
+  background: url('../../public/img/contact/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.abg{
+  background: url('../../public/img/about/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.abtimg2{
+  padding-right: 5%;
+  padding-top: -4%;
+}
 /* Tailwind CSS Styles for Vertical Timeline Component */
 
 .vertical-timeline-element--work .vertical-timeline-element-content-arrow {
@@ -219,6 +282,15 @@
     font-size: 20px;
     /* Smaller font size for mobile */
   }
+  .abtimg {
+    display: none;
+    height: 90%;
+    width: 90%;
+    
+    
+  
+  }
+  
   .textimg2 {
     font-size: 20px;
     /* Smaller font size for mobile */
