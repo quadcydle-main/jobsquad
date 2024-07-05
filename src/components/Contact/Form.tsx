@@ -38,10 +38,10 @@ const Form = () => {
       });
 
       if (res.ok) {
-        setSuccess('Your message has been sent successfully.');
+        setSuccess("Your message has been sent successfully.");
         setFormData({ name: '', email: '', message: '' });
       } else {
-        throw new Error('Failed to send message. Please try again later.');
+        throw new Error("Failed to send message. Please try again later.");
       }
     } catch (err: any) {
       setError(err.message);
