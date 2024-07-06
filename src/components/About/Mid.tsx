@@ -7,7 +7,7 @@ export const Mid = () => {
   return (
     <Container>
       <div className="">
-        <div className="relative flex flex-col lg:flex-row w-full h-200 p-8 lg:p-20">
+        <div className="relative flex flex-col lg:flex-row w-full h-200 p-8 ">
           <div className="flex-1 text-left lg:pr-10 lg:pt-10 lg:pl-10">
             <h1 className="text-4xl text-custom-blue pt-10 pb-5 font-bold lg:pt-20 lg:pb-5 lg:text-6xl">Our Story</h1>
             <p className="max-w-xl text-left text-md pb-20 text-black">
