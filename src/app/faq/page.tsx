@@ -9,6 +9,7 @@ const Faq = () => {
         <Container>
         
           <Faqimage/>
+          <div className="bg-gray-300 h-px mt-10 w-full w-80 lg:w-[70%] mx-auto my-4"></div>
           <Compfaq/>
         
         
