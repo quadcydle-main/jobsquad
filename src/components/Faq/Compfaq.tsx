@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 const faqs = [
   {
@@ -41,13 +41,13 @@ const Compfaq = () => {
         <div key={index} className="mb-4">
           <button
             onClick={() => toggleFaq(index)}
-            className="w-full text-left bg-white text-black border border-custom-blue px-4 py-2 rounded-sm focus:text-white focus:bg-custom-blue focus:border focus:border-blue-600"
+            className="w-full lg:text-center text-left bg-white text-black border border-custom-blue px-4 py-2 rounded-sm focus:text-white focus:bg-custom-blue focus:border focus:border-blue-600"
           >
             {faq.question}
             <span className="float-right">{openIndex === index ? '▲' : '▼'}</span>
           </button>
           {openIndex === index && (
-            <div className=" p-4 rounded-b-lg bg-white text-black">
+            <div className="p-4 rounded-b-lg bg-white text-black">
               {faq.answer}
             </div>
           )}
