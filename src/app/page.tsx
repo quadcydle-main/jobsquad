@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <Container>
       <Head>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/icon.ico" />
       </Head>
       <Hero />
       <div className="border border-gray-300 border-opacity-50 w-4/5 mx-auto"></div>
