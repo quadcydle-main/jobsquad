@@ -35,25 +35,25 @@ export const Form = () => {
         <div className="relative flex flex-col w-[65%] lg:flex-col lg:pl-10 lg:mr-10 justify-left items-left w-full lg:w-auto">
           {/* CTA form */}
           <h1 className="text-custom-blue font-bold text-3xl lg:text-4xl lg:pb-5 ">Send us a message</h1>
-          <p className='text-normal'>Need help? Fill out the form below, and one of our support
+          <p className='text-normal lg:max-w-xl'>Need help? Fill out the form below, and one of our support
             team members will get back to you as soon as possible.</p>
           <form className="w-full lg:w-auto pt-10">
             <div className="flex flex-col sm:flex-col justify-center sm:justify-end max-w-xs mx-auto sm:max-w-md lg:max-w-none lg:ml-auto lg:mr-0 gap-2 sm:gap-4">
               <input
                 type="text"
-                className="w-full max-w-xs sm:w-auto appearance-none border border-[#3975EA] rounded-xl px-4 py-2 text-black bg-transparent placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
+                className="w-full max-w-lg sm:w-auto appearance-none border border-[#3975EA] rounded-xl px-4 py-2 text-black bg-transparent placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
                 placeholder="Your name..."
                 aria-label="Your best email…"
               />
               <input
                 type="email"
-                className="w-full max-w-xs sm:w-auto appearance-none border border-[#3975EA] rounded-xl px-4 py-2 text-black bg-transparent placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
+                className="w-full max-w-lg sm:w-auto appearance-none border border-[#3975EA] rounded-xl px-4 py-2 text-black bg-transparent placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
                 placeholder="Your Email…"
                 aria-label="Your best email…"
               />
               <input
                 type="text"
-                className="w-full max-w-xs sm:w-auto appearance-none border border-[#3975EA] rounded-xl px-4 py-8 text-black bg-transparent placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
+                className="w-full max-w-lg sm:w-auto appearance-none border border-[#3975EA] rounded-xl px-4 py-8 text-black bg-transparent placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
                 placeholder="Message…"
                 aria-label="Your message…"
               />
