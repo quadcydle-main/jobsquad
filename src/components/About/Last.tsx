@@ -8,7 +8,7 @@ import { Container } from "../Container";
 
 export const Last = () => {
     return (
-        <Container>
+        <Container className="bg-white">
             <div className="flex justify-center items-center">
                 <div className="lg:max-w-[50%] p-5">
                     <h1 className="lg:text-5xl text-3xl text-center text-custom-blue text-left p-10 lg:mb-20 font-bold">
