@@ -11,7 +11,7 @@ export const Last = () => {
         <Container>
             <div className="flex justify-center items-center">
                 <div className="lg:max-w-[50%] p-5">
-                    <h1 className="lg:text-5xl text-2xl text-custom-blue text-left p-10 lg:mb-20 font-bold">
+                    <h1 className="lg:text-5xl text-3xl text-custom-blue text-left p-10 lg:mb-20 font-bold">
                         Why Choose Jobsquad?
                     </h1>
                     <div className="flex flex-col space-y-6">

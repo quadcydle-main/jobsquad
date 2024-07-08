@@ -9,7 +9,7 @@ export const Mission = () => {
                 <div className="hidden lg:block">
                     <Image src={iconm} alt="Mission icon" className="mb-4" />
                 </div>
-                <h2 className="text-2xl lg:text-4xl font-bold text-custom-blue lg:text-white">
+                <h2 className="text-3xl lg:text-4xl font-bold text-custom-blue lg:text-white">
                     Our Mission
                 </h2>
                 <p className="mt-2 lg:max-w-xl text-base lg:text-lg lg:text-white">
