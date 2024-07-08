@@ -9,12 +9,16 @@ import { Middlesection } from "@/components/Home/Middlesection";
 import { Cta } from "@/components/Home/Cta";
 import { Demo }   from '@/components/Home/Demo';
 import Pricingtable from "@/components/Home/Pricing";
+import Head from 'next/head';
 
 
 
 export default function Home() {
   return (
     <Container>
+      <Head>
+                <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Hero />
       <div className="border border-gray-300 border-opacity-50 w-4/5 mx-auto"></div>
       <SectionTitle
