@@ -23,13 +23,13 @@ export const Footer = () => {
 
               {/* 1st block */}
               <div className="md:col-span-4 lg:col-span-5">
-                <div className="mb-2">
+                <div className="mb-2 ">
                   {/* Logo */}
-                  <Link href="/" className="inline-block" aria-label="jobsquad">
+                  <Link href="/" className=" flex flex-row lg:flex-col inline-block  lg:item-left justify-center lg;justify-left item-center" aria-label="jobsquad">
                     <Image src={logo} alt="Footerlogo" />
                   </Link>
                 </div>
-                <div className="text-gray-600">Jobsquad is a cutting-edge Chrome extension designed to streamline
+                <div className=" text-center lg:text-left text-gray-600">Jobsquad is a cutting-edge Chrome extension designed to streamline
                   your job search on LinkedIn. Our team consists of passionate
                   professionals from various industries who have experienced the job hunt
                   firsthand. We are dedicated to making the job application process as
