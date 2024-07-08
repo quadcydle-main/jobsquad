@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Disclosure } from '@headlessui/react';
+import Head from 'next/head';
 
 export const Navbar = () => {
   const navigation = [
@@ -14,6 +15,9 @@ export const Navbar = () => {
 
   return (
     <div className="w-full bg-transparent">
+      <Head>
+                <link rel="icon" href="/favicon.ico" />
+      </Head>
       <nav className="container relative flex flex-wrap bg-transparent items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
         {/* Logo */}
         <Disclosure>
