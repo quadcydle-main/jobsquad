@@ -41,19 +41,19 @@ export const Form = () => {
             <div className="flex flex-col sm:flex-col justify-center sm:justify-end max-w-xs mx-auto sm:max-w-md lg:max-w-none lg:ml-auto lg:mr-0 gap-2 sm:gap-4">
               <input
                 type="text"
-                className="w-full max-w-lg sm:w-auto appearance-none border border-[#3975EA] rounded-xl px-4 py-2 text-black bg-transparent placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
+                className="w-full max-w-lg sm:w-auto appearance-none border border-gray-200 rounded-lg px-4 py-2 text-black bg-gray-100 placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
                 placeholder="Your name..."
                 aria-label="Your best email…"
               />
               <input
                 type="email"
-                className="w-full max-w-lg sm:w-auto appearance-none border border-[#3975EA] rounded-xl px-4 py-2 text-black bg-transparent placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
+                className="w-full max-w-lg sm:w-auto appearance-none border border-gray-200 rounded-lg px-4 py-2 text-black bg-gray-100  placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
                 placeholder="Your Email…"
                 aria-label="Your best email…"
               />
               <input
                 type="text"
-                className="w-full max-w-lg sm:w-auto appearance-none border border-[#3975EA] rounded-xl px-4 py-8 text-black bg-transparent placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
+                className="w-full max-w-lg sm:w-auto appearance-none border border-gray-200 rounded-lg px-4 py-8 text-black bg-gray-100 placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
                 placeholder="Message…"
                 aria-label="Your message…"
               />
