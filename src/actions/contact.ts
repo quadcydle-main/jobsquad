@@ -10,9 +10,12 @@ export async function contact(formData: FormData) {
   const email = formData.get('email')?.toString(); // Cast to string or handle null
   const message = formData.get('message');
 
+  console.log('Contact form submitted:', { name, email, message });
+
   if (!name || !email || !message) {
     throw new Error('Missing required form data'); // Handle missing data as needed
   }
+  
 
   // Send email to your own address
   await resend.emails.send({

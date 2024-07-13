@@ -8,6 +8,8 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function subscribe(formData: FormData) {
   const email = formData.get('email')?.toString(); // Cast to string or handle null
 
+  console.log('Newsletter form submitted:', { email });
+
   if (!email) {
     throw new Error('Missing email address'); // Handle missing email address
   }
