@@ -1,6 +1,9 @@
-import Image from 'next/image'
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import Image from 'next/image';
 import { Container } from "@/components/Container";
+import { contact } from "@/actions/contact"; // Adjust the import path as necessary
+import toast, { Toaster } from "react-hot-toast";
 
 import call from "../../../public/img/contact/call.svg";
 import mail from "../../../public/img/contact/mail.svg";
@@ -8,10 +11,53 @@ import lin from "../../../public/img/contact/lin.svg";
 import x from "../../../public/img/contact/x.svg";
 import ins from "../../../public/img/contact/ins.svg";
 
-
 export const Form = () => {
+  const [submitting, setSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value
+    });
+  };
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setSubmitting(true);
+
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('message', formData.message);
+      
+      const response = await contact(formDataToSend);
+      if (response.message) {
+        toast.success(response.message);
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        toast.error("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
-    <Container  >
+    <Container>
+      <Toaster />
       <div className="flex flex-col lg:flex-row items-center justify-between w-full max-w-6xl gap-5 mx-auto text-black px-7 py-7 lg:px-12 lg:py-12 formbg" style={{ borderRadius: '30px', boxShadow: 'none' }}>
         <div className="flex flex-col text-center w-[30%] justify-center items-center">
           <Image src={call} alt="image" className="mx-auto" />
@@ -35,33 +81,43 @@ export const Form = () => {
         <div className="relative flex flex-col w-[65%] lg:flex-col lg:pl-10 lg:mr-10 justify-left items-left w-full lg:w-auto">
           {/* CTA form */}
           <h1 className="text-custom-blue font-bold text-3xl lg:text-4xl lg:pb-5 ">Send us a message</h1>
-          <p className='text-normal lg:max-w-xl'>Need help? Fill out the form below, and one of our support
-            team members will get back to you as soon as possible.</p>
-          <form className="w-full lg:w-auto pt-10">
+          <p className='text-normal lg:max-w-xl'>Need help? Fill out the form below, and one of our support team members will get back to you as soon as possible.</p>
+          <form onSubmit={handleSubmit} className="w-full lg:w-auto pt-10">
             <div className="flex flex-col sm:flex-col justify-center sm:justify-end max-w-xs mx-auto sm:max-w-md lg:max-w-none lg:ml-auto lg:mr-0 gap-2 sm:gap-4">
               <input
                 type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full max-w-lg sm:w-auto appearance-none border border-gray-200 rounded-lg px-4 py-2 text-black bg-gray-100 placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
-                placeholder="Your name..."
-                aria-label="Your best email…"
+                placeholder="Your name"
+                aria-label="Your name"
+                required
               />
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full max-w-lg sm:w-auto appearance-none border border-gray-200 rounded-lg px-4 py-2 text-black bg-gray-100  placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
-                placeholder="Your Email…"
-                aria-label="Your best email…"
+                placeholder="Your Email"
+                aria-label="Your Email"
+                required
               />
-              <input
-                type="text"
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full max-w-lg sm:w-auto appearance-none border border-gray-200 rounded-lg px-4 py-8 text-black bg-gray-100 placeholder-grey-100 focus:placeholder-opacity-100 focus:outline-none"
-                placeholder="Message…"
-                aria-label="Your message…"
+                placeholder="Message"
+                aria-label="Your message"
+                required
               />
 
-              <a className="btn bg-custom-blue text-white w-[150px] text-center rounded-xl px-4 py-2 hover:bg-blue-600 shadow" href="#0">SUBMIT</a>
+              <button type="submit" className="btn bg-custom-blue text-white w-[150px] text-center rounded-xl px-4 py-2 hover:bg-blue-600 shadow" disabled={submitting}>
+                {submitting ? 'Submitting...' : 'SUBMIT'}
+              </button>
             </div>
-            {/* Success message */}
-            {/* <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
           </form>
         </div>
       </div>
