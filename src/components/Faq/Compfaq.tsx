@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const faqs = [
   {
@@ -46,11 +47,21 @@ const Compfaq = () => {
             {faq.question}
             <span className="float-right">{openIndex === index ? '▲' : '▼'}</span>
           </button>
-          {openIndex === index && (
-            <div className="p-4 rounded-b-lg bg-white text-black">
-              {faq.answer}
-            </div>
-          )}
+          <AnimatePresence>
+            {openIndex === index && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="overflow-hidden"
+              >
+                <div className="p-4 rounded-b-lg bg-white text-black">
+                  {faq.answer}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       ))}
     </div>
