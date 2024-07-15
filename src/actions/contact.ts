@@ -18,7 +18,7 @@ export async function contact(formData: FormData) {
 
   // Send email to your own address
   await resend.emails.send({
-    from: 'next@quadcydle.com',
+    from: ' JObSquad <next@quadcydle.com>',
     to: 'dhruvagrawat9@gmail.com', // Replace with your own email address
     subject: 'New message from your website!',
     text: `Name: ${name}, Email: ${email}, Message: ${message}`,
@@ -26,7 +26,7 @@ export async function contact(formData: FormData) {
 
   // Send email to the user who filled the form
   await resend.emails.send({
-    from: 'next@quadcydle.com',
+    from: ' JObSquad <next@quadcydle.com>',
     to: email,
     subject: 'Thank you for contacting us!',
     text: 'Dear user, Thank you for contacting us. We will get back to you soon.',

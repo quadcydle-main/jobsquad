@@ -16,7 +16,7 @@ export async function subscribe(formData: FormData) {
 
   // Send email to your own address
   await resend.emails.send({
-    from: 'next@quadcydle.com',
+    from: ' JObSquad <next@quadcydle.com>',
     to: 'dhruvagrawat9@gmail.com', // Replace with your own email address
     subject: 'New subscription!',
     text: `Email: ${email}`,
@@ -24,7 +24,7 @@ export async function subscribe(formData: FormData) {
 
   // Send email to the user who filled the form
   await resend.emails.send({
-    from: 'next@quadcydle.com',
+    from: 'JobSquad <next@quadcydle.com>',
     to: email,
     subject: 'Thank you for subscribing!',
     text: 'Dear user, Thank you for subscribing to our newsletter.',
