@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from 'next/link'
 import Image from 'next/image';
 import { Container } from "@/components/Container";
 import { contact } from "@/actions/contact"; // Adjust the import path as necessary
@@ -62,7 +63,7 @@ export const Form = () => {
         <div className="flex flex-col text-center w-[30%] justify-center items-center">
           <Image src={call} alt="image" className="mx-auto" />
           <p className="text-custom-blue pt-3">Call us at:</p>
-          <p>+1 (585) 733-6042</p>
+          <p>+1 (XXX) XXX-XXXX</p>
           <br />
           <Image src={mail} alt="image" className="mx-auto" />
           <p className="text-custom-blue pt-3">Email us:</p>
@@ -70,9 +71,15 @@ export const Form = () => {
           <br />
           <p className="text-custom-blue">Social Media</p>
           <div className="flex flex-row justify-center pt-3 gap-2">
-            <Image src={lin} alt="image" className="mx-auto" />
-            <Image src={x} alt="image" className="mx-auto" />
-            <Image src={ins} alt="image" className="mx-auto" />
+            <Link href="https://www.linkedin.com" target="_blank">
+              <Image src={lin} alt="image" className="mx-auto" />
+            </Link>
+            <Link href="https://www.x.com" target="_blank">
+              <Image src={x} alt="image" className="mx-auto" />
+            </Link>
+            <Link href="https://www.instgram.com" target="_blank">
+              <Image src={ins} alt="image" className="mx-auto" />
+            </Link>
           </div>
         </div>
 
